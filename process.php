@@ -39,21 +39,21 @@
 		
 		
 		echo "<h3>Electricity saved per month</h3>";
-		echo $monthenergy . " kWh</br>";
-		echo $monthcost . " Rand";
+		echo round($monthenergy,2) . " kWh</br>";
+		echo round($monthcost,2) . " Rand";
 		
 		echo "<h3>Cost of system per month before</h3>";
-		echo $monthenergy / $savingspotential . " kWh</br>";
-		echo $monthcost / $savingspotential . " Rand</br>";
+		echo round(($monthenergy / $savingspotential),2) . " kWh</br>";
+		echo round(($monthcost / $savingspotential),2) . " Rand</br>";
 		
 		echo "<h3>Months to break even</h3>";
-		echo  ($people * 1000) / $monthcost . " months</br>";
-		echo  ($people * 1000) / $monthcost / 12 . " years";
+		echo  round((($people * 1000) / $monthcost),2) . " months</br>";
+		echo  round((($people * 1000) / $monthcost / 12),2) . " years";
 		
 		echo "<h3>Total return after:</h3>";
-		echo "12 month: " .  $monthcost*12 . " Rand</br>";
-		echo "24 months " .  $monthcost*24 . " Rand</br>";
-		echo "48 months " .  $monthcost*48 . " Rand</br>";
+		echo "12 month: " .  round(($monthcost*12),2) . " Rand</br>";
+		echo "24 months " .  round(($monthcost*24),2) . " Rand</br>";
+		echo "48 months " .  round(($monthcost*48),2) . " Rand</br>";
 		
 		
 		

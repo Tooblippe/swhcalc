@@ -23,25 +23,25 @@
 		$months = 120;
 		
 		echo "<h3>Electricity saved per month</h3>";
-		echo $monthenergy . " kWh</br>";
+		echo round($monthenergy,2) . " kWh</br>";
 		
 		echo "<h3>Water</h3>";
-		echo ($monthenergy * $WaterC * $months );
+		echo round($monthenergy * $WaterC * $months,2 ) . " litres</br>";
 		
 		echo "<h3>Coal</h3>";
-		echo $monthenergy * $CoalC * $months. " kg</br>";
+		echo round($monthenergy * $CoalC * $months,2) . " kg</br>";
 		
 		echo "<h3>Ash</h3>";
-		echo $monthenergy * $AshC /1000 * $months. " kg</br>";
+		echo round($monthenergy * $AshC /1000 * $months,2) . " kg</br>";
 		
 		echo "<h3>SO2</h3>";
-		echo $monthenergy * $So2C /1000 * $months. " kg</br>";
+		echo round($monthenergy * $So2C /1000 * $months,2) . " kg</br>";
 		
 		echo "<h3>NOX</h3>";
-		echo $monthenergy * $NOX /1000 * $months. " kg</br>";
+		echo round($monthenergy * $NOX /1000 * $months,2). " kg</br>";
 		
 		echo "<h3>CO2</h3>";
-		echo $monthenergy * $CO2 * $months . " kg</br>";
+		echo round($monthenergy * $CO2 * $months ,2). " kg</br>";
 
 		
 		
