@@ -12,8 +12,7 @@
 			
 	<body>
 	<h1>Solar Water Heating Savings Calculator</h1>
-	<h2>Step 2 Congratulations! Here are the smart savings you have made</h2>
-	<h2>by simply choosing a greener way to heat water</h2>
+	<h2>Step 2 Congratulations! <br> Here are the smart savings you have made by simply choosing a greener way to heat water</h2>
 	
 	<?php
 	
@@ -78,7 +77,7 @@
 		
 		$monthcost = $monthenergy * $ckwh;								//what do you pay now
 		
-		$systemcost = $systemdata[$system]["cost"];					//obtain the system cost from the array
+		$systemcost = $systemdata[$system]["cost"];						//obtain the system cost from the array
 		echo "system cost" . $systemcost;
 		
 		//Create the outputs//
@@ -102,7 +101,7 @@
 			echo "48 months " .  round(($monthcost*48),2) . " Rand</br>";
 		
 		echo "<h3> Press submit to see your environmental benefits </h3>
-			<form action='process2.php' method='get'>
+			<form action='environ.php' method='get'>
 				<input type='hidden' name='monthenergy' value=" . $monthenergy . ">
 				<input type='submit' />
 			</form>";

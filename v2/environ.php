@@ -29,8 +29,7 @@
 		$NOX 		= 3.87;		//g/kwh
 		$CO2 		= 0.96;		//kg/kwh
 		$months 	= 120;		//study time period, chosen as 10 years
-		
-		
+				
 		//generate the outpurs
 		//----------------------------------------------------------------------
 		
